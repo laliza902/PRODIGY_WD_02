@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:950px)" href="phone.css">
+</head>
+<body>
+    <div class="container">
+        <div class="watch">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <div class="dotted-circle">
+                        <div class="timer">
+                            <span class="text-min">00 :</span>
+                            <span class="text-sec">&nbsp;00 :</span>
+                            <span class="text-ms">&nbsp;000</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="mark"><img src="lap.png" alt=""></button>
+            <button class="play"><img src="play-button.png" alt=""></button>
+            <button class="pause"><img src="pause.png" alt=""></button>
+            <button class="reset"><img src="refresh.png" alt=""></button>
+        </div>
+        <ul class="laps">
+            <li class="lap-item hidden">
+                <span class="lap">Lap</span>
+                <span class="lap-time">Lap Time</span>
+                <span class="total">Total</span>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

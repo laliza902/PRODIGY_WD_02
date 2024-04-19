@@ -1,0 +1,40 @@
+@media (max-width: 950px) {
+    .timer, .text-min, .text-sec, .text-ms {
+        font-size: 5vw; 
+    }
+
+    .outer-circle{
+        position: relative;
+        right: -143px;
+    }
+    .btn {
+        left: 8vw; 
+        top: 108vw; 
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .btn img {
+        width: 12vw; 
+        height: 12vw; 
+    }
+
+    .mark, .play, .pause, .reset {
+        padding: 0.7vw; 
+        margin: 5vw;
+    }
+
+    .laps{
+        top: -17px;
+        left: 157px;
+    }
+
+
+    .lap-item {
+        padding: 3.2vw;
+        border-radius: 6vw; 
+        font-size: 1.2vw; 
+    }
+}
