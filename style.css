@@ -7,7 +7,7 @@
 
 
 body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black; 
     display: flex;
@@ -17,18 +17,28 @@ body{
 }
 
 .container{
-    /* position: relative;
-    right: -80px; */
+    /* background-color: white; */
+    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
+.watch{
+
+    width: 100vw;
+    display: flex;
+    position: relative;
+    top: 170px;
+    margin: 0 0;
+    justify-content: center;
+    align-items: center;
+}
 
 .outer-circle{
-    width: 500px;
-    height: 500px;
+    width: 414px;
+    height: 414px;
     border-radius: 50%;
     background-color: white;
     display: flex;
@@ -40,8 +50,8 @@ body{
 
 
 .inner-circle{
-    width: 480px;
-    height: 480px;
+    width: 389px;
+    height: 389px;
     border-radius: 50%;
     background-color: black;
     display: flex;
@@ -52,49 +62,52 @@ body{
 
 
 .dotted-circle{
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: black;
     justify-content: center;
     align-items: center;
     display: flex;
-    border: 7px dotted rgba(255, 255, 255, 0.388);
+    border: 5px dotted rgba(255, 255, 255, 0.388);
 
 }
 
 
 .timer{
-    font-size: 70px;
-}
-.text-min{
-    color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
+.text-min{
+    color: white;
+    font-size: 40px;
+}
 
 .text-sec{
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 
 .text-ms{
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: -145px;
-    top: 400px;
+    top: 160px;
+
 }
 
 
 .btn img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
     background-color: rgba(83, 82, 82, 0.351);
     border-radius: 50%;
@@ -102,32 +115,56 @@ body{
 
 
 .mark{
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     padding: 5px 5px;
     margin: 40px;
 }
 
+.mark img{
+    width: 78px;
+    height: 78px;
+}
 
 .play{
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     padding: 5px 5px;
     margin: 40px;
 }
 
+.play img{
+    width: 78px;
+    height: 78px;
+}
 
 .pause{
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     padding: 5px 5px;
     margin: 40px;
 }
 
+.pause img{
+    width: 78px;
+    height: 78px;
+}
 
 .reset{
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     padding: 5px 5px;
     margin: 40px;
 }
 
+.reset img{
+    width: 78px;
+    height: 78px;
+}
 
 .laps{
     height: 300px;
@@ -136,7 +173,7 @@ body{
     color: white;
     position: relative;
     padding: 20px 0;
-    top: -147px;
+    top: 154px;
 }
 
 
@@ -159,12 +196,12 @@ body{
     border: 0.5px solid rgba(255, 255, 255, 0.256);
     border-radius: 50px;
     position: relative;
-    right: -4px ;
     font-size: 16px;
 }
 
 
 .lap{
+    font-size: 33px;
     list-style: none;
     color: white;
     position: relative;
@@ -173,6 +210,7 @@ body{
 
 
 .lap-time{
+    font-size: 33px;
     color: white;
     display: inline-block;
     justify-content: center;
@@ -184,13 +222,144 @@ body{
 }
 
 
-.total{
+/* .total{
     display: inline-block;
     margin-left: 25px;
     position: relative;
     left: 142px;
-} 
+}  */
 
 .hidden{
     visibility: hidden;
+}
+
+@media only screen and (max-width:660px){
+    .outer-circle{
+        width: 300px;
+        height: 300px;
+    }
+
+    .inner-circle{
+        width: 285px;
+        height: 285px;
+    }
+
+    .dotted-circle{
+        width: 269px;
+        height: 269px;
+    }
+
+    .text-min {
+        font-size: 30px;
+    }
+
+    .text-sec{
+        font-size: 30px;
+    }
+
+    .text-ms{
+        font-size: 30px;
+    }
+
+    .mark{
+        width: 50px;
+        height: 50px;
+        padding: 3px 3px;
+    }
+    
+    .mark img{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .play{
+        width: 50px;
+        height: 50px;
+        padding: 3px 3px;
+    }
+    
+    .play img{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .pause{
+        width: 50px;
+        height: 50px;
+        padding: 3px 3px;
+    }
+    
+    .pause img{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .reset{
+        width: 50px;
+        height: 50px;
+        padding: 3px 3px;
+    }
+    
+    .reset img{
+        width: 41px;
+        height: 41px;
+    }
+
+    .lap{
+        font-size: 20px;
+    }
+
+    .lap-time{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{   
+    .watch{
+        position: relative;
+        top: 81px;
+    }
+    .mark{
+        margin: 20px;
+    }
+
+    .play{
+        margin: 20px;
+    }
+
+    .pause{
+        margin: 20px;
+    }
+
+    .reset{
+        margin: 20px;
+    }
+    
+    /* .laps{
+        width: 108vw;
+    } */
+
+    .laps {
+        height: 300px;
+        overflow: auto;
+        list-style: none;
+        color: white;
+        position: relative;
+        padding: 20px 0;
+        top: 154px;
+    }
+
+    .lap-item{
+        width: 409px;
+        padding: 9px 0px;
+    }
+
+    .lap{
+        right: 94px;
+    }
+
+    .lap-time{
+        right: -71px;
+    }
 }
