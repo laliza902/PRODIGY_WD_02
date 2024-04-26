@@ -17,7 +17,6 @@ body{
 }
 
 .container{
-    /* background-color: white; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -221,14 +220,6 @@ body{
 
 }
 
-
-/* .total{
-    display: inline-block;
-    margin-left: 25px;
-    position: relative;
-    left: 142px;
-}  */
-
 .hidden{
     visibility: hidden;
 }
@@ -336,10 +327,6 @@ body{
         margin: 20px;
     }
     
-    /* .laps{
-        width: 108vw;
-    } */
-
     .laps {
         height: 300px;
         overflow: auto;
